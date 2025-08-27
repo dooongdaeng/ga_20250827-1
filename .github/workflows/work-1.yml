@@ -8,6 +8,9 @@ on:
       - 'Dockerfile'
     branches:
       - main
+permissions:
+  contents: write 
+  packages: write
 jobs:
   makeTagAndRelease:
     runs-on: ubuntu-latest
